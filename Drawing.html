@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Practice Drawing</title>
+		<style>
+			canvas{
+				border: 1px solid black;
+			}
+		</style>
+		<script>
+			window.onload = function(){
+			var canvas = document.getElementById("practiceDraw");
+			var context = canvas.getContext("2d");
+			context.beginPath();
+			context.moveTo(100, 150);
+			context.lineTo(250, 75);
+			context.lineTo(125, 30);
+			context.closePath();
+			context.lineWidth = 5;
+			context.stroke();
+			context.fillStyle = "red";
+			context.fill();
+
+			context.beginPath();
+			context.arc(300, 300, 75, (160 * Math.PI) / 180, (20 * Math.PI) / 180, true);
+			context.stroke();
+		};
+		</script>
+	</head>
+	<body>
+		<h1>Practice Drawing</h1>
+		<canvas id="practiceDraw" width="800" height="400"></canvas>
+	</body>
+</html>
