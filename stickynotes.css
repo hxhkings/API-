@@ -1,0 +1,37 @@
+li{
+	font-size: 32px;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	width: 250px;
+	height:300px;
+	margin: 30px;
+	padding: 10px;
+	box-shadow: 5px 5px 20px;
+	float: left;
+
+}
+ul{
+	list-style-type: none;
+	max-width: 3000px;
+}
+li{
+	transform:rotateZ(-3deg);
+
+}
+li:first-child{
+	transform: rotateZ(-1deg);
+	-webkit-transform-origin: 20% 40%;
+}
+li:nth-child(2){
+	transform: rotateZ(1deg);
+	-webkit-transform-origin: 20% 40%;
+}
+li:nth-child(3){
+	transform: rotateZ(-3deg);
+}
+li:nth-child(4){
+	transform: rotateZ(5deg);
+}
+body{
+	background-color: lightpink;	
+}
